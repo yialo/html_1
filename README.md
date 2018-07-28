@@ -1,1 +1,2 @@
-Проект Nerds
+# Nerds
+Nerds project repo
