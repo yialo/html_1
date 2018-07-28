@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин | HTML Academy: N&euml;rds</title>
+    <link rel="stylesheet" href="css/normalize-min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="N&euml;rds">
+        </a>
+        <ul>
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a>Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <a href="#">Корзина</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Магазин готовых шаблонов</h1>
+
+      <div>
+        <section>
+          <h2>Фильтр</h2>
+          <form action="https://echo.htmlacademy.ru" method="get" name="filter-data">
+            <fieldset>
+              <legend>Стоимость:</legend>
+              <div>
+                <div></div>
+                <button type="button">
+                  <span></span>
+                </button>
+                <button type="button">
+                  <span></span>
+                </button>
+              </div>
+              <div>
+                <label>от <input type="text" name="price-min" value="0" readonly></label>
+              </div>
+              <div>
+                <label>до <input type="text" name="price-max" value="5000" readonly></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="layout" value="adaptive" id="filter-field-adaptive" checked>
+                  <label for="filter-field-adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="layout" value="fixed" id="filter-field-fixed">
+                  <label for="filter-field-fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="layout" value="flexible" id="filter-field-flexible">
+                  <label for="filter-field-flexible">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="is-slider" value="yes" id="filter-field-slider" checked>
+                  <label for="filter-field-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="is-advantages" value="yes" id="filter-field-advantages">
+                  <label for="filter-field-advantages">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="is-news" value="yes" id="filter-field-news" checked>
+                  <label for="filter-field-news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="is-gallery" value="yes" id="filter-field-gallery">
+                  <label for="filter-field-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="is-cart" value="yes" id="filter-field-cart">
+                  <label for="filter-field-cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
+        </section>
+
+        <div>
+          <div>
+            <p>Сортировать:</p>
+            <ul>
+              <li>
+                <a>По цене</a>
+              </li>
+              <li>
+                <a href="#">По типу</a>
+              </li>
+              <li>
+                <a href="#">По названию</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a>
+                  <span>В прямом порядке</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>В обратном порядке</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <section>
+            <h2>Список шаблонов</h2>
+            <ul>
+              <li>
+                <img src="img/product-sedona.jpg" alt="Sedona">
+                <div>
+                  <h3>
+                    <a href="#">Sedona</a>
+                  </h3>
+                  <p>Информационный сайт для туристов</p>
+                  <a href="#">9 900 руб.</a>
+                </div>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </section>
+
+          <div>
+            <a href="">Предыдущая</a>
+            <ul>
+              <li>
+                <a>1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+            </ul>
+            <a href="">Следующая</a>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div>
+        <div>
+          <h3>N&euml;rds Design Studio</h3>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a href="#">Напишите нам</a>
+        </div>
+        <img src="img/map.jpg" width="1440" height="416" alt="Как до нас добраться">
+      </div>
+      <div>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <ul>
+          <li>
+            <a href="#">ВКонтакте</a>
+          </li>
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
