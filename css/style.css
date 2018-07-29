@@ -37,9 +37,15 @@
 
 /* Global */
 
-/*
+
 body {
-  min-width: 1200px;i
+  min-width: 1200px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #283136;
 
   background-color: #ffffff;
 }
@@ -54,6 +60,7 @@ a {
   text-decoration: none;
 }
 
+/*
 .visually-hidden {
   position: absolute;
 
@@ -79,7 +86,7 @@ a {
   margin: 0 auto;
   padding: 0 20px;zz
 }
-*/
+ */
 
 /* Header */
 
