@@ -155,54 +155,60 @@
       </section>
     </main>
 
-    <footer>
-      <div>
-        <div>
-          <h3>N&euml;rds Design Studio</h3>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a href="#">Напишите нам</a>
+    <footer class="page-footer">
+      <div class="page-footer__map">
+        <div class="contacts page-footer__contacts">
+          <h3 class="contacts__title">N&euml;rds Design Studio</h3>
+          <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts__phone">тел. +7 (812) 275-75-75</p>
+          <a class="contacts__link" href="#">Напишите нам</a>
         </div>
-        <img src="img/map.jpg" width="1440" height="416" alt="Как до нас добраться">
+        <img class="page-footer__map-image" src="img/map.jpg" width="1440" height="416" alt="Как до нас добраться">
       </div>
-      <div>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-          <li>
-            <a href="#">ВКонтакте</a>
+      <div class="social page-footer__social">
+        <p class="social__lead">Давайте дружить, это выгодно!</p>
+        <small class="social__discount">Скидка 10% для друзей из социальных сетей.</small>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
           </li>
-          <li>
-            <a href="#">Facebook</a>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
-          <li>
-            <a href="#">Instagram</a>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
           </li>
         </ul>
       </div>
     </footer>
 
-    <section>
-      <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post" name="feedback-data">
-        <p>
-          <label for="fullname">Ваше имя:</label>
-          <input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+    <section class="feedback">
+      <h2 class="feedback__title">Напишите нам</h2>
+      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post" name="feedback-data">
+        <p class="feedback__item feedback__item--input">
+          <label class="feedback__legend" for="fullname">Ваше имя:</label>
+          <input class="feedback__field feedback__field--fullname" type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
         </p>
-        <p>
-          <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" id="email" placeholder="email@example.com">
+        <p class="feedback__item feedback__item--input">
+          <label class="feedback__legend" for="email">Ваш e-mail:</label>
+          <input class="feedback__field feedback__field--email" type="email" name="email" id="email" placeholder="email@example.com">
         </p>
-        <p>
-          <label for="message">Текст письма:</label>
-          <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+        <p class="feedback__item feedback__item--textarea">
+          <label class="feedback__legend" for="message">Текст письма:</label>
+          <textarea class="feedback__field feedback__field--message" name="message" id="message" placeholder="В свободной форме"></textarea>
         </p>
-        <button type="submit">
-          <span>Отправить</span>
+        <button class="feedback__button" type="submit">
+          <span class="button-fix">Отправить</span>
         </button>
       </form>
-      <button type="button">
-        <span>Закрыть</span>
+      <button class="feedback__close" type="button">
+        <span class="button-fix">Закрыть</span>
       </button>
     </section>
 
