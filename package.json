@@ -1,0 +1,24 @@
+{
+  "name": "nerds",
+  "version": "1.0.0",
+  "description": "My first Gulp project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yialo/nerds.git"
+  },
+  "author": "yialo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yialo/nerds/issues"
+  },
+  "homepage": "https://github.com/yialo/nerds#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-less": "^4.0.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
