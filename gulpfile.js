@@ -1,10 +1,21 @@
-var
-  gulp = require('gulp'),
-  less = require('gulp-less'),
-  sass = require('gulp-sass');
+'use strict';
 
-gulp.task('sass', function() {
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var plumber = require('gulp-plumber');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var server = require('browser-sync').create();
+
+gulp.task('style', function() {
   return gulp.src('source/sass/style.scss')
-  .pipe(sass())
-  .pipe(gulp.dest('source/css'))
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer({
+        browsers: [
+          'last 2 versions'
+        ]})
+    ]))
+    .pipe(gulp.dest('source/css'));
 });

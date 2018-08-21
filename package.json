@@ -17,7 +17,12 @@
   },
   "homepage": "https://github.com/yialo/nerds#readme",
   "devDependencies": {
+    "autoprefixer": "^9.1.2",
+    "browser-sync": "^2.24.6",
     "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1"
   }
 }
