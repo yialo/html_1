@@ -1,2 +1,2 @@
 # Nerds
-Nerds project repo
+Nerds project repository
