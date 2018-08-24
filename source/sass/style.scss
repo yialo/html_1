@@ -1,15 +1,13 @@
+@import "normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
-@import "normalize.scss";
+@import "animations.scss";
+@import "fonts.scss";
+@import "global.scss";
 
-@import "global/animations.scss";
-@import "global/fonts.scss";
-@import "global/tagstyles.scss";
-
-@import "blocks/aligner.scss";
-@import "blocks/visually-hidden.scss";
-@import "blocks/button-fix.scss";
-
+// @import "blocks/aligner.scss";
+// @import "blocks/visually-hidden.scss";
+// @import "blocks/button-fix.scss";
 @import "blocks/advantages.scss";
 @import "blocks/catalog.scss";
 @import "blocks/clients.scss";
