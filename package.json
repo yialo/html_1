@@ -15,6 +15,9 @@
   },
   "homepage": "https://github.com/yialo/nerds#readme",
   "dependencies": {
+    "ajv": "^6.5.3",
+    "debug": "^3.1.0",
+    "lodash": "^4.17.10",
     "normalize.css": "^8.0.0"
   },
   "engines": {
