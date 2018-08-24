@@ -1,9 +1,10 @@
-@import "normalize.scss";
+@import "global/normalize.scss";
+@import "global/fonts.scss";
+@import "global/animations.scss";
+@import "global/layout.scss";
+
 @import "variables.scss";
 @import "mixins.scss";
-@import "animations.scss";
-@import "fonts.scss";
-@import "global.scss";
 
 // @import "blocks/aligner.scss";
 // @import "blocks/visually-hidden.scss";

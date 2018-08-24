@@ -14,10 +14,5 @@ gulp.task('style', function() {
     .pipe(postcss([
       autoprefixer
     ]))
-    .pipe(gulp.dest('build'));
-});
-
-gulp.task('markup', function() {
-  return gulp.src('source/*.html')
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('source/css'));
 });

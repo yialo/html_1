@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин | HTML Academy: N&euml;rds</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -19,8 +19,8 @@
             <li class="navigation__item">
               <a class="navigation__link" href="#">Клиенты</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--current">Магазин</a>
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link">Магазин</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Контакты</a>
@@ -106,24 +106,24 @@
               <h2 class="visually-hidden">Сортировка</h2>
               <p class="sorting__legend">Сортировать:</p>
               <ul class="sorting__list sorting__list--type">
-                <li class="sorting__item sorting__item--type sorting__item--current">
-                  <a class="sorting__link sorting__link--type">По цене</a>
+                <li class="sorting__item">
+                  <a class="sorting__link sorting__link--type sorting__link--active">По цене</a>
                 </li>
-                <li class="sorting__item sorting__item--type">
+                <li class="sorting__item">
                   <a class="sorting__link sorting__link--type" href="#">По типу</a>
                 </li>
-                <li class="sorting__item sorting__item--type">
+                <li class="sorting__item">
                   <a class="sorting__link sorting__link--type" href="#">По названию</a>
                 </li>
               </ul>
               <ul class="sorting__list sorting__list--direction">
-                <li class="sorting__item sorting__item--direction">
-                  <a class="sorting__link sorting__link--direction sorting__item--current">
+                <li class="sorting__item">
+                  <a class="sorting__link sorting__link--arrow sorting__link--active">
                     <span class="visually-hidden">В прямом порядке</span>
                   </a>
                 </li>
-                <li class="sorting__item sorting__item--direction">
-                  <a class="sorting__link sorting__link--direction" href="#">
+                <li class="sorting__item">
+                  <a class="sorting__link sorting__link--arrow" href="#">
                     <span class="visually-hidden">В обратном порядке</span>
                   </a>
                 </li>
@@ -197,8 +197,10 @@
             </section>
 
             <div class="pagination catalog__pagination">
-              <a class="pagination__link pagination__link--direction pagination__link--disabled" href="#">Предыдущая</a>
               <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--direction pagination__link--disabled" href="#">Предыдущая</a>
+                </li>
                 <li class="pagination__item">
                   <a class="pagination__link pagination__link--number pagination__link--current">1</a>
                 </li>
@@ -208,8 +210,10 @@
                 <li class="pagination__item">
                   <a class="pagination__link pagination__link--number" href="#">3</a>
                 </li>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--direction" href="">Следующая</a>
+                </li>
               </ul>
-              <a class="pagination__link pagination__link--direction" href="">Следующая</a>
             </div>
 
           </div>
