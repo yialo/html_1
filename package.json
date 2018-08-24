@@ -1,11 +1,9 @@
 {
   "name": "nerds",
   "version": "1.0.0",
-  "description": "My first Gulp project",
+  "private": true,
+  "description": "My first project on Gulp",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yialo/nerds.git"
@@ -16,13 +14,44 @@
     "url": "https://github.com/yialo/nerds/issues"
   },
   "homepage": "https://github.com/yialo/nerds#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  },
+  "engines": {
+    "node": "8.11"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp style",
+    "start": "gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.1.2",
     "browser-sync": "^2.24.6",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-posthtml": "^3.0.4",
+    "gulp-sass": "^4.0.1",
+    "posthtml-include": "^1.2.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-htmlacademy": "^0.1.1"
   }
 }
