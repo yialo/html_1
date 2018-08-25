@@ -3,7 +3,36 @@
   "version": "1.0.0",
   "private": true,
   "description": "My first project on Gulp",
-  "main": "index.js",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^9.1.2",
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webp": "^3.0.0",
+    "posthtml-include": "^1.2.0",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^9.5.0",
+    "stylelint-config-htmlacademy": "^0.1.1"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp run serve"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yialo/nerds.git"
@@ -13,19 +42,17 @@
   "bugs": {
     "url": "https://github.com/yialo/nerds/issues"
   },
+  "main": "index.js",
   "homepage": "https://github.com/yialo/nerds#readme",
+  "engines": {
+    "node": "8.11"
+  },
   "dependencies": {
     "ajv": "^6.5.3",
     "debug": "^3.1.0",
     "lodash": "^4.17.10",
-    "normalize.css": "^8.0.0"
-  },
-  "engines": {
-    "node": "8.11"
-  },
-  "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss"
+    "normalize.css": "^8.0.0",
+    "tunnel-agent": "^0.6.0"
   },
   "browserslist": [
     "last 2 versions",
@@ -39,19 +66,5 @@
     "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
-  ],
-  "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "^1.0.0",
-    "autoprefixer": "^9.1.2",
-    "browser-sync": "^2.24.6",
-    "gulp": "^4.0.0",
-    "gulp-cli": "^2.0.1",
-    "gulp-plumber": "^1.2.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-sass": "^4.0.1",
-    "posthtml-include": "^1.2.0",
-    "stylelint": "^9.5.0",
-    "stylelint-config-htmlacademy": "^0.1.1"
-  }
+  ]
 }
