@@ -43,5 +43,5 @@ var style = function() {
 
 // Gulp tasks
 
+gulp.task('build', style);
 gulp.task('serve', serve);
-gulp.task('style', style);
