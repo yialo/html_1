@@ -23,22 +23,22 @@ var clean = function () {
 }
 
 var html = function () {
-  return gulp.src('source/*html')
+  return gulp.src('source/*.html')
     .pipe(posthtml([
       include()
     ]))
     .pipe(gulp.dest('build/'))
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('build/'));
+    // .pipe(htmlmin({collapseWhitespace: true}))
+    // .pipe(rename({suffix: '.min'}))
+    // .pipe(gulp.dest('build/'));
 }
 
 var serve = function () {
   browserSync.init({
-    server: 'source/'
+    server: 'build/'
   });
   gulp.watch('source/sass/**/*.scss', style);
-  gulp.watch('source/*.html').on('change', browserSync.reload);
+  gulp.watch('source/*.html', html).on('change', browserSync.reload);
 }
 
 var style = function() {
@@ -48,15 +48,13 @@ var style = function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css/'))
+    .pipe(gulp.dest('build/css/'))
     .pipe(browserSync.stream());
 }
 
 // Gulp tasks
 
-gulp.task('default', serve);
-
-// gulp.task('build', gulp.series(style, html));
+gulp.task('build', gulp.series(clean, gulp.parallel(style, html)));
 gulp.task('clean', clean);
 gulp.task('html', html);
 gulp.task('serve', serve);
