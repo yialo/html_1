@@ -1,1 +1,24 @@
 /* SCSS mixins */
+
+@mixin list-box {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style-type: none;
+}
+
+@mixin text-box {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin outliner {
+  outline: 1px solid green;
+  outline-offset: -1px;
+}

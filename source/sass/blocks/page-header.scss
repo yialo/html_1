@@ -1,0 +1,14 @@
+/* page-header BEM-block */
+
+.page-header {
+  background-color: $gray;
+}
+
+.page-header__wrapper {
+  display: flex;
+  padding-top: 49px;
+}
+
+.page-header__logo {
+  margin-right: 200px;
+}

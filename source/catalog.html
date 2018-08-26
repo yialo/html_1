@@ -12,7 +12,7 @@
           <img class="logo__image" src="https://via.placeholder.com/160x65" width="160" height="65" alt="N&euml;rds">
         </a>
         <nav class="navigation page-header__navigation">
-          <ul class="navigation__list">
+          <ul class="navigation__list navigation__list--site">
             <li class="navigation__item">
               <a class="navigation__link" href="#">Студия</a>
             </li>
@@ -26,13 +26,17 @@
               <a class="navigation__link" href="#">Контакты</a>
             </li>
           </ul>
-          <a class="navigation__cart" href="#">Корзина</a>
+          <ul class="navigation__list navigation__list--user">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--cart" href="#">Корзина</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Магазин готовых шаблонов</h1>
+      <h1 class="aligner page-main__title">Магазин готовых шаблонов</h1>
 
       <div class="catalog">
         <div class="catalog__pane catalog__pane--left">
