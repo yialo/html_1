@@ -9,10 +9,6 @@
   @include list-box;
 }
 
-.controls__item {
-  @include outliner;
-}
-
 .controls__item:not(:last-child) {
   margin-right: 17px;
 }

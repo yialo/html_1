@@ -1,0 +1,53 @@
+/* services BEM-block */
+
+.services {
+  padding-top: 80px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include list-box;
+
+  border-bottom: 2px solid $gray;
+}
+
+.services__item {
+  width: 300px;
+  padding-top: 170px;
+
+  background-repeat: no-repeat;
+
+  &:not(:last-child) {
+    margin-right: 100px;
+  }
+  &--sites {
+    background-image: url("../img/services-1.jpg");
+  }
+  &--apps {
+    background-image: url("../img/services-2.jpg");
+  }
+  &--presentations {
+    background-image: url("../img/services-3.jpg");
+  }
+}
+
+.services__title {
+  @include margin-vert(0, 16px);
+
+  @include font(700, 24px, 30px);
+  text-transform: uppercase;
+  color: black;
+}
+
+.services__description {
+  width: 260px;
+  @include margin-vert(0, 33px);
+
+  @include font(400, 16px, 24px);
+  color: $navy;
+}
+
+.services__link {
+  margin-bottom: 80px;
+}

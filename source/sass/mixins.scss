@@ -40,6 +40,24 @@
   position: absolute;
 }
 
+@mixin bgcolor-states($hbg: #e74246, $abg: #d7373b) {
+  &:hover {
+    background-color: $hbg;
+  }
+  &:active {
+    background-color: $abg;
+  }
+}
+
+@mixin color-states($hc: white, $ac: rgba(255, 255, 255, 0.3)) {
+  &:hover {
+    color: $hc;
+  }
+  &:active {
+    color: $ac;
+  }
+}
+
 /* TEMPORARY */
 
 @mixin outliner {

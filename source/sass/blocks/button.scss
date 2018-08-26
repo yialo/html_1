@@ -3,28 +3,33 @@
 .button {
   display: inline-block;
   @include padding-vert(17px, 15px);
-
   vertical-align: top;
 
   @include font(500, 16px, 18px);
   text-transform: uppercase;
   color: white;
 
+  background-color: $red;
+  @include bgcolor-states;
+  @include color-states;
   border-radius: 3px;
+
   &--advantages {
     @include padding-hor(55px);
   }
+  &--services {
+    @include padding-hor(40px);
+  }
+  &--apps {
+    background-color: $green;
+    @include bgcolor-states(#00bc6c, #00aa62);
+  }
+  &--presentations {
+    background-color: $yellow;
+    @include bgcolor-states(#eab534, #e5a722);
+  }
   &--gray {
     background-color: $gray;
-  }
-  &--green {
-    background-color: $green;
-  }
-  &--red {
-    background-color: $red;
-  }
-  &--yellow {
-    background-color: $yellow;
   }
 }
 
