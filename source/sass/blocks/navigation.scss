@@ -4,41 +4,59 @@
   display: flex;
   width: 800px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
+  @include font(500, 16px, 30px);
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 1);
+  color: black;
 }
 
 .navigation__list {
-  @include list-box;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 27px;
-}
-
-.navigation__list--site {
-  max-width: 680px;
-}
-
-.navigation__list--user {
-  max-width: 360px;
-  margin-left: auto;
+  padding-top: 26px;
+  @include list-box;
+  &--site {
+    max-width: 680px;
+  }
+  &--user {
+    max-width: 360px;
+    margin-left: auto;
+  }
 }
 
 .navigation__item {
   margin-bottom: 4px;
+  &--current {
+    background-image: linear-gradient(to top, $red 0, $red 2px, transparent 2px);
+  }
 }
 
 .navigation__item:not(:last-child) {
-  margin-right: 45px;
-}
-
-.navigation__item--current {
-  background-image: linear-gradient(to top, $red 0, $red 2px, transparent 2px);
+  margin-right: 47px;
 }
 
 .navigation__link {
   display: block;
+  margin-bottom: 5px;
+  transition-property: color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  &--cart {
+    position: relative;
+    padding-left: 45px;
+    &::before {
+      @include pseudo;
+      top: 7px;
+      left: 5px;
+
+      width: 15px;
+      height: 15px;
+      background-color: green;
+    }
+  }
+  &:hover {
+    color: $red;
+  }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

@@ -4,6 +4,12 @@
   display: block;
   width: 160px;
   height: 65px;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .logo-image {

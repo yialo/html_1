@@ -1,5 +1,17 @@
 /* SCSS mixins */
 
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin font($w: 400, $s: 16px, $lh: 24px) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $lh;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
 @mixin list-box {
   margin-top: 0;
   margin-bottom: 0;
@@ -8,15 +20,27 @@
   list-style-type: none;
 }
 
-@mixin text-box {
-  margin-top: 0;
-  margin-bottom: 0;
+@mixin margin-vert($mt: 0, $mb: 0) {
+  margin-top: $mt;
+  margin-bottom: $mb;
 }
 
-@mixin flex-column {
-  display: flex;
-  flex-direction: column;
+@mixin padding-hor($pdh: 20px) {
+  padding-left: $pdh;
+  padding-right: $pdh;
 }
+
+@mixin padding-vert($pdt: 10px, $pdb: 10px) {
+  padding-top: $pdt;
+  padding-bottom: $pdb;
+}
+
+@mixin pseudo {
+  content: "";
+  position: absolute;
+}
+
+/* TEMPORARY */
 
 @mixin outliner {
   outline: 1px solid green;

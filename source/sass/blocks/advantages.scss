@@ -1,0 +1,57 @@
+/* advantages BEM-block */
+
+.advantages {
+  background-color: $gray;
+}
+
+.advantages__wrapper {
+  position: relative;
+}
+
+.advantages__list {
+  @include flex-column;
+  @include list-box;
+}
+
+.advantages__item {
+  display: none;
+  padding-top: 76px;
+
+  background-color: $gray;
+  background-repeat: no-repeat;
+  &--current {
+    display: block;
+  }
+  &--expensive {
+    background-image: url("../img/advantages-slide-1.png");
+    background-position: 397px 0;
+  }
+  &--math {
+    background-image: url("../img/advantages-slide-2.png");
+    background-position: 399px 0;
+  }
+  &--night {
+    background-image: url("../img/advantages-slide-3.png");
+    background-position: 401px -1px;
+  }
+}
+
+.advantages__lead {
+  width: 600px;
+  @include margin-vert(0, 27px);
+
+  @include font(500, 55px, 55px);
+  color: black;
+}
+
+.advantages__description {
+  width: 430px;
+  @include margin-vert(0, 40px);
+  @include font(400, 16px, 24px);
+
+  color: $navy;
+}
+
+.advantages__link {
+  margin-bottom: 80px;
+}

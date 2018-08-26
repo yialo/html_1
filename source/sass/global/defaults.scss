@@ -13,11 +13,8 @@ html {
 body {
   min-width: 1200px;
 
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: "Roboto", "Arial", sans-serif;
-  color: #283136;
+  @include font;
+  color: $navy;
 
   background-color: #ffffff;
 }

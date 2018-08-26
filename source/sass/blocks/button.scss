@@ -1,23 +1,31 @@
 /* button BEM-block */
 
 .button {
+  display: inline-block;
+  @include padding-vert(17px, 15px);
 
-}
+  vertical-align: top;
 
-.button--gray {
+  @include font(500, 16px, 18px);
+  text-transform: uppercase;
+  color: white;
 
-}
-
-.button--green {
-
-}
-
-.button--red {
-
-}
-
-.button--yellow {
-
+  border-radius: 3px;
+  &--advantages {
+    @include padding-hor(55px);
+  }
+  &--gray {
+    background-color: $gray;
+  }
+  &--green {
+    background-color: $green;
+  }
+  &--red {
+    background-color: $red;
+  }
+  &--yellow {
+    background-color: $yellow;
+  }
 }
 
 .button__fix {

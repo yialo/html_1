@@ -1,0 +1,26 @@
+/* controls BEM-block */
+
+.controls {
+  position: absolute;
+  top: 317px;
+  left: 557px;
+  display: flex;
+
+  @include list-box;
+}
+
+.controls__item {
+  @include outliner;
+}
+
+.controls__item:not(:last-child) {
+  margin-right: 17px;
+}
+
+.controls__button {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: green;
+  border-style: none;
+}
