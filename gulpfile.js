@@ -27,6 +27,7 @@ var serve = function () {
     ui: false
   });
   gulp.watch('source/sass/**/*.scss', style);
+  gulp.watch('source/js/**/*.js');
   gulp.watch('source/*.html').on('change', browserSync.reload);
 }
 
