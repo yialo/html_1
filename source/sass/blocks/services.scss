@@ -1,13 +1,11 @@
 /* services BEM-block */
 
-.services {
-  padding-top: 80px;
-}
-
 .services__list {
   display: flex;
   flex-wrap: wrap;
   @include list-box;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   @include bottom-gray;
 }
@@ -46,8 +44,4 @@
 
   @include font(400, 16px, 24px);
   color: $navy;
-}
-
-.services__link {
-  margin-bottom: 80px;
 }

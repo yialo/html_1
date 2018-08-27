@@ -1,11 +1,9 @@
 /* reference BEM-block */
 
-.reference {
-  padding-top: 40px;
-}
-
 .reference__wrapper {
   display: flex;
+  padding-top: 40px;
+  padding-bottom: 74px;
 
   @include bottom-gray;
 }
@@ -51,9 +49,11 @@
 .reference__item {
   position: relative;
 
-  margin-bottom: 24px;
   padding-left: 37px;
 
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
   &::before {
     @include pseudo;
     top: 12px;

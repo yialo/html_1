@@ -16,6 +16,7 @@
 .advantages__item {
   display: none;
   padding-top: 76px;
+  padding-bottom: 80px;
 
   background-color: $gray;
   background-repeat: no-repeat;
@@ -51,8 +52,4 @@
   @include font(400, 16px, 24px);
 
   color: $navy;
-}
-
-.advantages__link {
-  margin-bottom: 80px;
 }
