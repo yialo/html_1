@@ -19,7 +19,7 @@
 }
 
 .feedback__title {
-  @include margin-vert(0, 42px);
+  @include margin-vert(42px);
   @include font(500, 45px, 45px);
   color: black;
 }

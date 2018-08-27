@@ -62,7 +62,7 @@
 }
 
 .social__lead {
-  @include margin-vert(0, 10px);
+  @include margin-vert(10px);
   @include font(700, 36px, 36px);
   color: black;
 }

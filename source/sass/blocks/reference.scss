@@ -18,21 +18,21 @@
 }
 
 .reference__lead {
-  @include margin-vert(0, 34px);
+  @include margin-vert(34px);
 
   @include font(500, 45px, 45px);
   color: black;
 }
 
 .reference__description {
-  @include margin-vert(0, 39px);
+  @include margin-vert(39px);
 
   @include font(400, 16px, 24px);
   color: $navy;
 }
 
 .reference__list-legend {
-  @include margin-vert(0, 24px);
+  @include margin-vert(24px);
 
   @include font(700, 16px, 24px);
   text-transform: uppercase;
@@ -73,7 +73,7 @@
 }
 
 .reference__table-legend {
-  @include margin-vert(0, 39px);
+  @include margin-vert(39px);
   padding-left: 17px;
 
   @include font(700, 16px, 24px);
