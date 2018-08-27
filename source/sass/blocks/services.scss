@@ -9,7 +9,7 @@
   flex-wrap: wrap;
   @include list-box;
 
-  border-bottom: 2px solid $gray;
+  @include bottom-gray;
 }
 
 .services__item {

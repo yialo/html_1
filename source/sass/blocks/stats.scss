@@ -1,0 +1,25 @@
+/* stats BEM-block */
+
+.stats {
+  border-collapse: collapse;
+}
+
+.stats__cell {
+  width: 120px;
+
+  &--fieldname {
+    @include font(400, 16px, 18px);
+    color: &navy;
+  }
+  &--value {
+    padding-bottom: 19px;
+
+    @include font(700, 45px, 45px);
+    color: black;
+  }
+}
+
+.stats__topindex {
+  vertical-align: top;
+  @include unistring(28px);
+}

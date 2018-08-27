@@ -1,0 +1,83 @@
+/* reference BEM-block */
+
+.reference {
+  padding-top: 40px;
+}
+
+.reference__wrapper {
+  display: flex;
+
+  @include bottom-gray;
+}
+
+.reference__column--left {
+  width: 660px;
+  margin-right: 140px;
+  padding-top: 32px;
+}
+
+.reference__column--right {
+  width: 360px;
+}
+
+.reference__lead {
+  @include margin-vert(0, 34px);
+
+  @include font(500, 45px, 45px);
+  color: black;
+}
+
+.reference__description {
+  @include margin-vert(0, 39px);
+
+  @include font(400, 16px, 24px);
+  color: $navy;
+}
+
+.reference__list-legend {
+  @include margin-vert(0, 24px);
+
+  @include font(700, 16px, 24px);
+  text-transform: uppercase;
+  color: black;
+}
+
+.reference__list {
+  @include list-box;
+
+  @include font(400, 16px, 24px);
+}
+
+.reference__item {
+  position: relative;
+
+  margin-bottom: 24px;
+  padding-left: 37px;
+
+  &::before {
+    @include pseudo;
+    top: 12px;
+    left: 1px;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: $red;
+  }
+}
+
+.reference__logo {
+  display: block;
+  width: 360px;
+  height: 208px;
+  margin-bottom: 35px;
+}
+
+.reference__table-legend {
+  @include margin-vert(0, 39px);
+  padding-left: 17px;
+
+  @include font(700, 16px, 24px);
+  text-transform: uppercase;
+  color: black;
+}

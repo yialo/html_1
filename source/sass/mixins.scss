@@ -1,5 +1,9 @@
 /* SCSS mixins */
 
+@mixin bottom-gray {
+  border-bottom: 2px solid $gray;
+}
+
 @mixin flex-column {
   display: flex;
   flex-direction: column;
@@ -40,7 +44,7 @@
   position: absolute;
 }
 
-@mixin bgcolor-states($hbg: #e74246, $abg: #d7373b) {
+@mixin states-bgcolor($hbg: #e74246, $abg: #d7373b) {
   &:hover {
     background-color: $hbg;
   }
@@ -49,13 +53,18 @@
   }
 }
 
-@mixin color-states($hc: white, $ac: rgba(255, 255, 255, 0.3)) {
+@mixin states-color($hc: white, $ac: rgba(255, 255, 255, 0.3)) {
   &:hover {
     color: $hc;
   }
   &:active {
     color: $ac;
   }
+}
+
+@mixin unistring($size: 16px) {
+  font-size: $size;
+  line-height: $size;
 }
 
 /* TEMPORARY */

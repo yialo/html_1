@@ -10,8 +10,8 @@
   color: white;
 
   background-color: $red;
-  @include bgcolor-states;
-  @include color-states;
+  @include states-bgcolor;
+  @include states-color;
   border-radius: 3px;
 
   &--color--gray {
@@ -19,11 +19,11 @@
   }
   &--color--green {
     background-color: $green;
-    @include bgcolor-states(#00bc6c, #00aa62);
+    @include states-bgcolor(#00bc6c, #00aa62);
   }
   &--color--yellow {
     background-color: $yellow;
-    @include bgcolor-states(#eab534, #e5a722);
+    @include states-bgcolor(#eab534, #e5a722);
   }
   &--section--advantages {
     @include padding-hor(55px);
