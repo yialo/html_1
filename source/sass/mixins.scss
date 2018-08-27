@@ -70,7 +70,7 @@
     0.2s;
 }
 
-@mixin transition-opacity($op: 0.2s) {
+@mixin transition-opacity($op: 0.1s) {
   transition-property: opacity;
   transition-duration: $op;
 }

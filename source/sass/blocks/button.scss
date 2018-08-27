@@ -30,9 +30,13 @@
   &--section--advantages {
     @include padding-hor(55px);
   }
-  &--contacts {
+  &--section--contacts {
     @include padding-hor(45px);
   }
+  &--section--feedback{
+    @include padding-hor(84px);
+    border-style: none;
+  };
   &--section--services {
     @include padding-hor(40px);
   }
