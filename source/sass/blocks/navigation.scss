@@ -36,22 +36,21 @@
 .navigation__link {
   display: block;
   margin-bottom: 5px;
-  transition-property: color;
-  transition-duration: 0.25s;
-  transition-timing-function: ease;
+  @include transition-color;
 
   &--cart {
     position: relative;
-    padding-left: 45px;
+    padding-left: 40px;
 
     &::before {
       @include pseudo;
       top: 7px;
-      left: 5px;
+      left: 0;
 
       width: 15px;
       height: 15px;
-      background-color: green;
+      background-image: url("../img/icon-cart.svg");
+      background-repeat: no-repeat;
     }
   }
   &:hover {

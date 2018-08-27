@@ -1,21 +1,20 @@
 /* page-footer BEM-block */
 
 .page-footer {
-  &--index {
-    padding-top: 80px;
-  }
-  &--catalog {
-    padding-top: 60px;
-  }
-}
-
-.page-footer__wrapper--inner {
   position: relative;
 }
 
-.page-footer__contacts {
+.page-footer__map {
   position: absolute;
-  top: 54px;
-  left: 0;
+  z-index: -1;
+}
 
+.page-footer__wrapper {
+  &--top {
+    @include padding-vert(54px, 54px);
+  }
+  &--bottom {
+    @include padding-vert(68px, 70px);
+    background-color: white;
+  }
 }

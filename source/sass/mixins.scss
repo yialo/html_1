@@ -62,6 +62,19 @@
   }
 }
 
+@mixin transition-color {
+  transition-property:
+    background-color,
+    color;
+  transition-duration:
+    0.2s;
+}
+
+@mixin transition-opacity($op: 0.2s) {
+  transition-property: opacity;
+  transition-duration: $op;
+}
+
 @mixin unistring($size: 16px) {
   font-size: $size;
   line-height: $size;

@@ -14,7 +14,17 @@
 
   width: 260px;
   &:not(:last-child) {
+    position: relative;
     margin-right: 40px;
+    &::after {
+      @include pseudo;
+      top: 18px;
+      right: -21px;
+
+      width: 2px;
+      height: 52px;
+      background-color: $gray;
+    }
   }
 }
 

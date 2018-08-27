@@ -1,1 +1,10 @@
 /* page-main BEM-block */
+
+.page-main {
+  &--index {
+    margin-bottom: 80px;
+  }
+  &--catalog {
+    margin-bottom: 60px;
+  }
+}
