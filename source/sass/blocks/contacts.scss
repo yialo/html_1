@@ -1,0 +1,31 @@
+/* contacts BEM-block */
+
+.contacts {
+  // @include outliner;
+  width: 319px;
+  background-color: white;
+  @include padding-vert(48px, 47px);
+  padding-left: 49px;
+  padding-right: 49px;
+}
+
+.contacts__title {
+  width: 209px;
+  @include margin-vert(0, 23px);
+  @include font(700, 18px, 30px);
+  text-transform: uppercase;
+  color: black;
+}
+
+.contacts__text {
+  width: 209px;
+  margin-top: 0;
+  @include font(400, 16px, 18px);
+  color: #666666;
+  &--address {
+    margin-bottom: 18px;
+  }
+  &--phone {
+    margin-bottom: 38px;
+  }
+}

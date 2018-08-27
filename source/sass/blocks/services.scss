@@ -4,8 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   @include list-box;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  @include padding-vert(80px, 80px);
 
   @include bottom-gray;
 }

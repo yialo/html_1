@@ -8,6 +8,12 @@
   position: relative;
 }
 
+.advantages__controls {
+  position: absolute;
+  top: 317px;
+  left: 537px;
+}
+
 .advantages__list {
   @include flex-column;
   @include list-box;
@@ -15,8 +21,7 @@
 
 .advantages__item {
   display: none;
-  padding-top: 76px;
-  padding-bottom: 80px;
+  @include padding-vert(76px, 80px);
 
   background-color: $gray;
   background-repeat: no-repeat;

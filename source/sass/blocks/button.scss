@@ -28,6 +28,9 @@
   &--section--advantages {
     @include padding-hor(55px);
   }
+  &--contacts {
+    @include padding-hor(45px);
+  }
   &--section--services {
     @include padding-hor(40px);
   }

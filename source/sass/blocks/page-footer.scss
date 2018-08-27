@@ -1,0 +1,21 @@
+/* page-footer BEM-block */
+
+.page-footer {
+  &--index {
+    padding-top: 80px;
+  }
+  &--catalog {
+    padding-top: 60px;
+  }
+}
+
+.page-footer__wrapper--inner {
+  position: relative;
+}
+
+.page-footer__contacts {
+  position: absolute;
+  top: 54px;
+  left: 0;
+
+}

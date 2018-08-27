@@ -1,11 +1,7 @@
 /* controls BEM-block */
 
 .controls {
-  position: absolute;
-  top: 317px;
-  left: 537px;
   display: flex;
-
   @include list-box;
 }
 

@@ -4,8 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   @include list-box;
-  padding-top: 46px;
-  padding-bottom: 44px;
+  @include padding-vert(46px, 44px);
+
+  @include bottom-gray;
 }
 
 .clients__item {
