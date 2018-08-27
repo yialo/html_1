@@ -8,6 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   @include list-box;
+  padding-bottom: 80px;
 
   border-bottom: 2px solid $gray;
 }
@@ -46,8 +47,4 @@
 
   @include font(400, 16px, 24px);
   color: $navy;
-}
-
-.services__link {
-  margin-bottom: 80px;
 }
