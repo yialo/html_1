@@ -5,7 +5,6 @@
 @import "global/fonts.scss";
 @import "global/animations.scss";
 @import "global/defaults.scss";
-@import "global/jsstyles.scss";
 
 @import "blocks/aligner.scss";
 @import "blocks/advantages.scss";
@@ -32,3 +31,5 @@
 @import "blocks/sorting.scss";
 @import "blocks/stats.scss";
 @import "blocks/visually-hidden.scss";
+
+@import "global/jsstyles.scss";
