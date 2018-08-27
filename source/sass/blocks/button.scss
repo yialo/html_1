@@ -14,22 +14,22 @@
   @include color-states;
   border-radius: 3px;
 
-  &--advantages {
-    @include padding-hor(55px);
+  &--color--gray {
+    background-color: $gray;
   }
-  &--services {
-    @include padding-hor(40px);
-  }
-  &--apps {
+  &--color--green {
     background-color: $green;
     @include bgcolor-states(#00bc6c, #00aa62);
   }
-  &--presentations {
+  &--color--yellow {
     background-color: $yellow;
     @include bgcolor-states(#eab534, #e5a722);
   }
-  &--gray {
-    background-color: $gray;
+  &--section--advantages {
+    @include padding-hor(55px);
+  }
+  &--section--services {
+    @include padding-hor(40px);
   }
 }
 
