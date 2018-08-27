@@ -15,7 +15,6 @@
 }
 
 .advantages__list {
-  @include flex-column;
   @include list-box;
 }
 
@@ -57,4 +56,8 @@
   @include font(400, 16px, 24px);
 
   color: $navy;
+}
+
+.advantages__link {
+  width: 240px;
 }

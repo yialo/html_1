@@ -3,42 +3,32 @@
 .button {
   display: inline-block;
   @include padding-vert(17px, 15px);
+  @include padding-hor(15px);
   vertical-align: top;
 
   @include font(500, 16px, 18px);
+  text-align: center;
   text-transform: uppercase;
   color: white;
 
   background-color: $red;
   @include states-bgcolor;
   @include states-color;
+  border-style: none;
   border-radius: 3px;
 
   @include transition-color;
 
-  &--color--gray {
+  &--gray {
     background-color: $gray;
   }
-  &--color--green {
+  &--green {
     background-color: $green;
     @include states-bgcolor(#00bc6c, #00aa62);
   }
-  &--color--yellow {
+  &--yellow {
     background-color: $yellow;
     @include states-bgcolor(#eab534, #e5a722);
-  }
-  &--section--advantages {
-    @include padding-hor(55px);
-  }
-  &--section--contacts {
-    @include padding-hor(45px);
-  }
-  &--section--feedback{
-    @include padding-hor(84px);
-    border-style: none;
-  };
-  &--section--services {
-    @include padding-hor(40px);
   }
 }
 

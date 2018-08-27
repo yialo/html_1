@@ -4,11 +4,6 @@
   border-bottom: 2px solid $gray;
 }
 
-@mixin flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
 @mixin font($w: 400, $s: 16px, $lh: 24px) {
   font-weight: $w;
   font-size: $s;

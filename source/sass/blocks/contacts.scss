@@ -1,11 +1,10 @@
 /* contacts BEM-block */
 
 .contacts {
-  width: 319px;
+  width: 320px;
   background-color: white;
   @include padding-vert(48px, 47px);
-  padding-left: 49px;
-  padding-right: 49px;
+  @include padding-hor(50px);
 }
 
 .contacts__title {
@@ -27,4 +26,8 @@
   &--phone {
     margin-bottom: 38px;
   }
+}
+
+.contacts__link {
+  width: 220px;
 }
