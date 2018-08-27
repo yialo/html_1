@@ -1,0 +1,26 @@
+/* clients BEM-block */
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include list-box;
+  padding-top: 46px;
+  padding-bottom: 44px;
+}
+
+.clients__item {
+  @include outliner;
+
+  width: 260px;
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.clients__link {
+  display: block;
+}
+
+.clients__logo {
+  display: block;
+}
