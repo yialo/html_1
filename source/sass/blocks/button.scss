@@ -19,8 +19,14 @@
 
   @include transition-color;
 
-  &--gray {
+  &--dark-text {
+    color: black;
     background-color: $gray;
+    @include states-bgcolor(#dfdfdf, #d5d5d5);
+    @include states-color(black, rgba(0, 0, 0, 0.3));
+    &:active {
+      box-shadow: inset 0 3px 0 0 #bfbfbf;
+    }
   }
   &--green {
     background-color: $green;
