@@ -4,8 +4,6 @@
   @include outliner;
 }
 
-
-
 .filter__section {
   margin-left: 0;
   margin-right: 0;
@@ -16,8 +14,18 @@
 .filter__section-title {
   @include outliner;
 
-  width: 100%;
-  padding-top: 30px;
+  margin-bottom: 20px;
+  @include font(700, 18px, 18px);
+  text-transform: uppercase;
+  color: black;
+}
+
+.filter__section-title--price {
+  margin-bottom: 58px;
+}
+
+.filter__scale {
+
 }
 
 .filter__button {

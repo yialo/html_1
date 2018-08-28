@@ -46,15 +46,17 @@
             <h2 class="visually-hidden">Фильтр</h2>
             <form class="filter__form" action="https://echo.htmlacademy.ru" method="GET" name="filter-data">
               <fieldset class="filter__section filter__section--price">
-                <legend class="filter__section-title">Стоимость:</legend>
+                <legend class="filter__section-title filter__section-title--price">Стоимость:</legend>
                 <div class="scale filter__scale">
-                  <div class="scale__bar"></div>
-                  <button class="scale__toggle scale__toggle--min" type="button">
-                    <span class="visually-hidden">Минимальная цена</span>
-                  </button>
-                  <button class="scale__toggle scale__toggle--max" type="button">
-                    <span class="visually-hidden">Максимальная цена</span>
-                  </button>
+                  <div class="scale__bar">
+                    <div class="scale__pointer"></div>
+                    <button class="scale__toggle scale__toggle--min" type="button">
+                      <span class="visually-hidden">Минимальная цена</span>
+                    </button>
+                    <button class="scale__toggle scale__toggle--max" type="button">
+                      <span class="visually-hidden">Максимальная цена</span>
+                    </button>
+                  </div>
                 </div>
                 <p class="scale-controls filter__scale-controls">
                   <label class="scale-controls__legend">от <input class="scale-controls__field" type="text" name="price-min" value="0" readonly=""></label>
