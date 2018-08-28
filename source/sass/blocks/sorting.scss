@@ -60,13 +60,13 @@
     height: 10px;
     margin-top: 6px;
   }
-  &--direction:link path {
+  &--direction:link .sorting__icon-path {
     fill: rgba(166, 166, 166, 0.2);
   }
-  &--direction:hover path {
+  &--direction:hover .sorting__icon-path {
     fill: #a6a6a6;
   }
-  &--direction:active path {
+  &--direction:active .sorting__icon-path {
     fill: #231f20;
   }
 }
@@ -74,13 +74,13 @@
 .sorting__link--active {
   &:link {
     color: rgba(0, 0, 0, 1);
-    path {
+    .sorting__icon-path {
       fill: #231f20;
     }
   }
   &:hover {
     color: rgba(0, 0, 0, 1);
-    path {
+    .sorting__icon-path {
       fill: #231f20;
     }
   }
