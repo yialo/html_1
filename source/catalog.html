@@ -36,7 +36,9 @@
     </header>
 
     <main class="page-main page-main--catalog">
-      <h1 class="aligner page-main__title">Магазин готовых шаблонов</h1>
+      <div class="page-main__wrapper">
+        <h1 class="aligner page-main__title">Магазин готовых шаблонов</h1>
+      </div>
 
       <div class="catalog">
         <div class="catalog__pane catalog__pane--left">
@@ -106,123 +108,123 @@
               </button>
             </form>
           </section>
+        </div>
 
-          <div class="catalog__pane catalog__pane--right">
-            <section class="sorting catalog__sorting">
-              <h2 class="visually-hidden">Сортировка</h2>
-              <p class="sorting__legend">Сортировать:</p>
-              <ul class="sorting__list sorting__list--type">
-                <li class="sorting__item">
-                  <a class="sorting__link sorting__link--type sorting__link--active">По цене</a>
-                </li>
-                <li class="sorting__item">
-                  <a class="sorting__link sorting__link--type" href="#">По типу</a>
-                </li>
-                <li class="sorting__item">
-                  <a class="sorting__link sorting__link--type" href="#">По названию</a>
-                </li>
-              </ul>
-              <ul class="sorting__list sorting__list--direction">
-                <li class="sorting__item">
-                  <a class="sorting__link sorting__link--arrow sorting__link--active">
-                    <span class="visually-hidden">В прямом порядке</span>
-                  </a>
-                </li>
-                <li class="sorting__item">
-                  <a class="sorting__link sorting__link--arrow" href="#">
-                    <span class="visually-hidden">В обратном порядке</span>
-                  </a>
-                </li>
-              </ul>
-            </section>
+        <div class="catalog__pane catalog__pane--right">
+          <section class="sorting catalog__sorting">
+            <h2 class="visually-hidden">Сортировка</h2>
+            <p class="sorting__caption">Сортировать:</p>
+            <ul class="sorting__list sorting__list--type">
+              <li class="sorting__item">
+                <a class="sorting__link sorting__link--type sorting__link--active">По цене</a>
+              </li>
+              <li class="sorting__item">
+                <a class="sorting__link sorting__link--type" href="#">По типу</a>
+              </li>
+              <li class="sorting__item">
+                <a class="sorting__link sorting__link--type" href="#">По названию</a>
+              </li>
+            </ul>
+            <ul class="sorting__list sorting__list--direction">
+              <li class="sorting__item">
+                <a class="sorting__link sorting__link--arrow sorting__link--active">
+                  <span class="visually-hidden">В прямом порядке</span>
+                </a>
+              </li>
+              <li class="sorting__item">
+                <a class="sorting__link sorting__link--arrow" href="#">
+                  <span class="visually-hidden">В обратном порядке</span>
+                </a>
+              </li>
+            </ul>
+          </section>
 
-            <section class="showcase catalog__showcase">
-              <h2 class="visually-hidden">Список шаблонов</h2>
-              <ul class="showcase__list">
-                <li class="product showcase__item">
-                  <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="Sedona">
-                  <div class="product__data">
-                    <h3 class="product__title">
-                      <a class="button product__link" href="#">Sedona</a>
-                    </h3>
-                    <p class="product__description">Информационный сайт для туристов</p>
-                    <a class="product__purchase" href="#">9 900 руб.</a>
-                  </div>
-                </li>
-                <li class="product showcase__item">
-                  <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="Pink App">
-                  <div class="product__data">
-                    <h3 class="product__title">
-                      <a class="button product__link" href="#">Pink App</a>
-                    </h3>
-                    <p class="product__description">Продуктовый лендинг приложения для iOS и Android</p>
-                    <a class="product__purchase" href="#">9 900 руб.</a>
-                  </div>
-                </li>
-                <li class="product showcase__item">
-                  <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="Barbershop Borodinski">
-                  <div class="product__data">
-                    <h3 class="product__title">
-                      <a class="button product__link" href="#">Barbershop</a>
-                    </h3>
-                    <p class="product__description">Сайт салона красоты. Для мужчин, да.</p>
-                    <a class="product__purchase" href="#">9 900 руб.</a>
-                  </div>
-                </li>
-                <li class="product showcase__item">
-                  <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="Mishka">
-                  <div class="product__data">
-                    <h3 class="product__title">
-                      <a class="button product__link" href="#">Mishka</a>
-                    </h3>
-                    <p class="product__description">Интернет-магазин вязаных игрушек</p>
-                    <a class="product__purchase" href="#">9 900 руб.</a>
-                  </div>
-                </li>
-                <li class="product showcase__item">
-                  <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="A Plus">
-                  <div class="product__data">
-                    <h3 class="product__title">
-                      <a class="button product__link" href="#">A Plus</a>
-                    </h3>
-                    <p class="product__description">Лендинг курсов повышения квалификации</p>
-                    <a class="product__purchase" href="#">9 900 руб.</a>
-                  </div>
-                </li>
-                <li class="product showcase__item">
-                  <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="Кваст">
-                  <div class="product__data">
-                    <h3 class="product__title">
-                      <a class="button product__link" href="#">Кваст</a>
-                    </h3>
-                    <p class="product__description">Промо-сайт производителя крафтового кваса</p>
-                    <a class="product__purchase" href="#">9 900 руб.</a>
-                  </div>
-                </li>
-              </ul>
-            </section>
+          <section class="showcase catalog__showcase">
+            <h2 class="visually-hidden">Список шаблонов</h2>
+            <ul class="showcase__list">
+              <li class="product showcase__item">
+                <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="Sedona">
+                <div class="product__data">
+                  <h3 class="product__title">
+                    <a class="button product__link" href="#">Sedona</a>
+                  </h3>
+                  <p class="product__description">Информационный сайт для туристов</p>
+                  <a class="product__purchase" href="#">9 900 руб.</a>
+                </div>
+              </li>
+              <li class="product showcase__item">
+                <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="Pink App">
+                <div class="product__data">
+                  <h3 class="product__title">
+                    <a class="button product__link" href="#">Pink App</a>
+                  </h3>
+                  <p class="product__description">Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="product__purchase" href="#">9 900 руб.</a>
+                </div>
+              </li>
+              <li class="product showcase__item">
+                <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="Barbershop Borodinski">
+                <div class="product__data">
+                  <h3 class="product__title">
+                    <a class="button product__link" href="#">Barbershop</a>
+                  </h3>
+                  <p class="product__description">Сайт салона красоты. Для мужчин, да.</p>
+                  <a class="product__purchase" href="#">9 900 руб.</a>
+                </div>
+              </li>
+              <li class="product showcase__item">
+                <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="Mishka">
+                <div class="product__data">
+                  <h3 class="product__title">
+                    <a class="button product__link" href="#">Mishka</a>
+                  </h3>
+                  <p class="product__description">Интернет-магазин вязаных игрушек</p>
+                  <a class="product__purchase" href="#">9 900 руб.</a>
+                </div>
+              </li>
+              <li class="product showcase__item">
+                <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="A Plus">
+                <div class="product__data">
+                  <h3 class="product__title">
+                    <a class="button product__link" href="#">A Plus</a>
+                  </h3>
+                  <p class="product__description">Лендинг курсов повышения квалификации</p>
+                  <a class="product__purchase" href="#">9 900 руб.</a>
+                </div>
+              </li>
+              <li class="product showcase__item">
+                <img class="product__image" src="https://via.placeholder.com/360x576" width="360" height="576" alt="Кваст">
+                <div class="product__data">
+                  <h3 class="product__title">
+                    <a class="button product__link" href="#">Кваст</a>
+                  </h3>
+                  <p class="product__description">Промо-сайт производителя крафтового кваса</p>
+                  <a class="product__purchase" href="#">9 900 руб.</a>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            <div class="pagination catalog__pagination">
-              <ul class="pagination__list">
-                <li class="pagination__item">
-                  <a class="button button--gray pagination__link pagination__link--direction pagination__link--disabled" href="#">Предыдущая</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="button button--gray pagination__link pagination__link--number pagination__link--current">1</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="button button--gray pagination__link pagination__link--number" href="#">2</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="button button--gray pagination__link pagination__link--number" href="#">3</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="button button--gray pagination__link pagination__link--direction" href="">Следующая</a>
-                </li>
-              </ul>
-            </div>
-
+          <div class="pagination catalog__pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="button button--gray pagination__link pagination__link--direction pagination__link--disabled" href="#">Предыдущая</a>
+              </li>
+              <li class="pagination__item">
+                <a class="button button--gray pagination__link pagination__link--number pagination__link--current">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="button button--gray pagination__link pagination__link--number" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="button button--gray pagination__link pagination__link--number" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="button button--gray pagination__link pagination__link--direction" href="">Следующая</a>
+              </li>
+            </ul>
           </div>
+
         </div>
       </div>
     </main>
@@ -236,7 +238,7 @@
           <h3 class="contacts__title">N&euml;rds Design Studio</h3>
           <p class="contacts__text contacts__text--address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p class="contacts__text contacts__text--phone">тел. +7 (812) 275-75-75</p>
-          <a class="button button--section--contacts contacts__link" href="#">Напишите нам</a>
+          <a class="button contacts__link" href="feedback.html">Напишите нам</a>
         </article>
       </div>
       <div class="aligner page-footer__wrapper page-footer__wrapper--bottom">
@@ -265,5 +267,31 @@
         </div>
       </div>
     </footer>
+
+    <section class="feedback">
+      <h2 class="feedback__title">Напишите нам</h2>
+      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post" name="feedback-data">
+        <p class="feedback__item feedback__item--input">
+          <label class="feedback__legend" for="fullname">Ваше имя:</label>
+          <input class="feedback__field feedback__field--fullname" type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback__item feedback__item--input">
+          <label class="feedback__legend" for="email">Ваш e-mail:</label>
+          <input class="feedback__field feedback__field--email" type="email" name="email" id="email" placeholder="email@example.com">
+        </p>
+        <p class="feedback__item feedback__item--textarea">
+          <label class="feedback__legend" for="message">Текст письма:</label>
+          <textarea class="feedback__field feedback__field--message" name="message" id="message" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button feedback__button" type="submit">
+          <span class="button__fix">Отправить</span>
+        </button>
+      </form>
+      <button class="feedback__close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+
+    <script src="js/script-catalog.js"></script>
   </body>
 </html>

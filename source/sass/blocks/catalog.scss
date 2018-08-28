@@ -1,0 +1,25 @@
+/* catalog BEM-block */
+
+.catalog {
+  display: flex;
+  padding-top: 60px;
+}
+
+.catalog__pane {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  &--left {
+    align-items: flex-end;
+    width: 260px;
+    margin-right: 140px;
+  }
+  &--right {
+    align-items: flex-start;
+    width: 760px;
+  }
+}
+
+.catalog__filter {
+  width: 260px;
+}

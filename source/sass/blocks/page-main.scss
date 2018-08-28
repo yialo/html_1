@@ -8,3 +8,16 @@
     margin-bottom: 60px;
   }
 }
+
+.page-main__wrapper {
+  background-color: $gray;
+}
+
+.page-main__title {
+  @include margin-vert;
+  @include padding-vert(76px, 110px);
+
+  @include font(500, 55px, 55px);
+  text-align: center;
+  color: black;
+}

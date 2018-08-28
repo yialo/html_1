@@ -1,0 +1,30 @@
+/* sorting BEM-block */
+
+.sorting {
+  @include outliner;
+
+  display: flex;
+  width: 760px;
+}
+
+.sorting__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include list-box;
+}
+
+.sorting__caption {
+  @include margin-vert;
+  @include font(700, 18px, 18px);
+  text-transform: uppercase;
+  color: black;
+}
+
+.sorting__link {
+  display: block;
+  &--arrow {
+    width: 11px;
+    height: 10px;
+    background-color: red;
+  }
+}

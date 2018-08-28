@@ -21,5 +21,6 @@
 
 .stats__topindex {
   vertical-align: top;
-  @include unistring(28px);
+  font-size: 28px;
+  line-height: 28px;
 }

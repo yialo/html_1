@@ -70,11 +70,6 @@
   transition-duration: $op;
 }
 
-@mixin unistring($size: 16px) {
-  font-size: $size;
-  line-height: $size;
-}
-
 /* TEMPORARY */
 
 @mixin outliner {
