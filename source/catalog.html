@@ -48,20 +48,28 @@
               <fieldset class="filter__section filter__section--price">
                 <legend class="filter__section-title filter__section-title--price">Стоимость:</legend>
                 <div class="scale filter__scale">
-                  <div class="scale__bar">
-                    <div class="scale__pointer"></div>
-                    <button class="scale__toggle scale__toggle--min" type="button">
-                      <span class="visually-hidden">Минимальная цена</span>
-                    </button>
-                    <button class="scale__toggle scale__toggle--max" type="button">
-                      <span class="visually-hidden">Максимальная цена</span>
-                    </button>
+                  <div class="scale__range">
+                    <div class="scale__bar">
+                      <div class="scale__pointer"></div>
+                      <button class="scale__toggle scale__toggle--min" type="button">
+                        <span class="visually-hidden">Минимальная цена</span>
+                      </button>
+                      <button class="scale__toggle scale__toggle--max" type="button">
+                        <span class="visually-hidden">Максимальная цена</span>
+                      </button>
+                    </div>
                   </div>
+                  <ul class="scale__controls">
+                    <li class="scale__control-item">
+                      <span class="scale__legend">от </span>
+                      <input class="scale__field" type="output" name="price-min" value="0" readonly="">
+                    </li>
+                    <li class="scale__control-item">
+                      <span class="scale__legend">до </span>
+                      <input class="scale__field" type="output" name="price-max" value="15 000" readonly="">
+                    </li>
+                  </ul>
                 </div>
-                <p class="scale-controls filter__scale-controls">
-                  <label class="scale-controls__legend">от <input class="scale-controls__field" type="text" name="price-min" value="0" readonly=""></label>
-                  <label class="scale-controls__legend">до <input class="scale-controls__field" type="text" name="price-max" value="5000" readonly=""></label>
-                </p>
               </fieldset>
               <fieldset class="filter__section filter__section--layout">
                 <legend class="filter__section-title">Сетка:</legend>

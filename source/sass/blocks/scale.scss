@@ -1,6 +1,7 @@
 /* scale BEM-block */
 
-.scale {
+.scale__range {
+  margin-bottom: 14px;
   @include padding-vert(39px, 39px);
   padding-left: 20px;
 
@@ -46,4 +47,38 @@
   &:active {
     transform: scale(1.1);
   }
+}
+
+.scale__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include list-box;
+
+  font-size: 0;
+}
+
+.scale__legend {
+  display: inline-block;
+  margin-right: 12px;
+  padding-top: 7px;
+  vertical-align: top;
+
+  @include font(400, 16px, 22px);
+  text-transform: uppercase;
+  color: $navy;
+}
+
+.scale__field {
+  width: 80px;
+  padding: 8px;
+  vertical-align: top;
+
+  @include font(400, 16px, 22px);
+  text-align: center;
+  color: $navy;
+
+  background-color: $gray;
+  border-style: none;
+  border-radius: 3px;
 }
