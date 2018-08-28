@@ -1,30 +1,87 @@
 /* sorting BEM-block */
 
 .sorting {
-  @include outliner;
-
   display: flex;
   width: 760px;
+}
+
+.sorting__caption {
+  width: 360px;
+  @include margin-vert;
+  margin-right: 40px;
+
+  @include font(700, 18px, 18px);
+  text-transform: uppercase;
+  color: black;
 }
 
 .sorting__list {
   display: flex;
   flex-wrap: wrap;
   @include list-box;
+  &--type {
+    width: 300px;
+    padding-top: 2px;
+    @include font(400, 14px, 18px);
+    text-transform: uppercase;
+  }
+  &--direction {
+    justify-content: flex-end;
+    width: 60px;
+    margin-left: auto;
+  }
 }
 
-.sorting__caption {
-  @include margin-vert;
-  @include font(700, 18px, 18px);
-  text-transform: uppercase;
-  color: black;
+.sorting__item {
+  &--type:not(:last-child) {
+    margin-right: 25px;
+  }
+  &--direction {
+    &:not(:first-child) {
+      margin-left: 19px;
+    }
+  }
 }
 
 .sorting__link {
   display: block;
-  &--arrow {
+  &--type:link {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  &--type:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  &--type:active {
+    color: rgba(0, 0, 0, 1);
+  }
+  &--direction {
+    display: flex;
     width: 11px;
     height: 10px;
-    background-color: red;
+    margin-top: 6px;
+  }
+  &--direction:link path {
+    fill: rgba(166, 166, 166, 0.2);
+  }
+  &--direction:hover path {
+    fill: #a6a6a6;
+  }
+  &--direction:active path {
+    fill: #231f20;
+  }
+}
+
+.sorting__link--active {
+  &:link {
+    color: rgba(0, 0, 0, 1);
+    path {
+      fill: #231f20;
+    }
+  }
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+    path {
+      fill: #231f20;
+    }
   }
 }

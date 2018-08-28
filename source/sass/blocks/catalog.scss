@@ -2,7 +2,7 @@
 
 .catalog {
   display: flex;
-  padding-top: 60px;
+  padding-top: 57px;
 }
 
 .catalog__pane {
@@ -22,4 +22,8 @@
 
 .catalog__filter {
   width: 260px;
+}
+
+.catalog__sorting {
+  margin-bottom: 55px;
 }
