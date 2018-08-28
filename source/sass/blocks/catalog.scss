@@ -11,12 +11,10 @@
   flex-grow: 1;
   &--left {
     align-items: flex-end;
-    width: 260px;
     margin-right: 140px;
   }
   &--right {
     align-items: flex-start;
-    width: 760px;
   }
 }
 
@@ -25,5 +23,14 @@
 }
 
 .catalog__sorting {
+  width: 760px;
   margin-bottom: 55px;
+}
+
+.catalog__showcase {
+  width: 760px;
+}
+
+.catalog__pagination {
+  width: 760px;
 }
