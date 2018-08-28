@@ -45,6 +45,7 @@
 
 .sorting__link {
   display: block;
+  @include transition-color;
   &--type:link {
     color: rgba(0, 0, 0, 0.3);
   }
@@ -62,6 +63,8 @@
   }
   &--direction:link .sorting__icon-path {
     fill: rgba(166, 166, 166, 0.2);
+    transition-property: fill;
+    transition-duration: 0.2s;
   }
   &--direction:hover .sorting__icon-path {
     fill: #a6a6a6;
