@@ -29,7 +29,6 @@
 .filter__list {
   @include list-box;
   @include font(400, 16px, 20px);
-  color: $navy;
 }
 
 .filter__list-item {
@@ -41,10 +40,16 @@
 
 .filter__legend {
   position: relative;
+
   &::before {
     @include pseudo;
     background-repeat: no-repeat;
     opacity: 0.4;
+    @include transition-opacity(0.2s);
+  }
+  &:link {
+    color: $navy;
+    @include transition-color;
   }
   &:hover {
     color: black;
@@ -53,7 +58,7 @@
     }
   }
   &:active {
-    color: $navy;
+    color: rgba(0, 0, 0, 0.8);
   }
   &--radio::before {
     top: -1px;
@@ -81,20 +86,20 @@
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filter__radio:checked ~ .filter__legend--radio:active::before {
-  background-image: url("../img/radio-off.svg");
-}
-
 .filter__radio:not(:checked) ~ .filter__legend--radio:active::before {
   background-image: url("../img/radio-on.svg");
 }
 
-.filter__checkbox:checked ~ .filter__legend--checkbox:active::before {
-  background-image: url("../img/checkbox-off.svg");
-}
-
 .filter__checkbox:not(:checked) ~ .filter__legend--checkbox:active::before {
   background-image: url("../img/checkbox-on.svg");
+}
+
+.filter__radio:checked ~ .filter__legend--radio:active::before {
+  background-image: url("../img/radio-off.svg");
+}
+
+.filter__checkbox:checked ~ .filter__legend--checkbox:active::before {
+  background-image: url("../img/checkbox-off.svg");
 }
 
 .filter__radio:disabled ~ .filter__legend--radio {
