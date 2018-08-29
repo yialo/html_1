@@ -36,6 +36,11 @@
     background-color: $yellow;
     @include states-bgcolor(#eab534, #e5a722);
   }
+  &--strict-size {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 .button__fix {
