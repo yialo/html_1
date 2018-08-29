@@ -5,23 +5,110 @@
   margin-right: 0;
   padding: 0;
   border-style: none;
+  &--price {
+    margin-bottom: 59px;
+  }
+  &--layout {
+    margin-bottom: 51px;
+  }
+  &--features {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__section-title {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   @include font(700, 18px, 18px);
   text-transform: uppercase;
   color: black;
-}
-
-.filter__section-title--price {
-  margin-bottom: 58px;
+  &--price {
+    margin-bottom: 58px;
+  }
 }
 
 .filter__list {
   @include list-box;
   @include font(400, 16px, 20px);
   color: $navy;
+}
+
+.filter__list-item {
+  padding-left: 36px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.filter__legend {
+  position: relative;
+  &::before {
+    @include pseudo;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+  }
+  &:hover {
+    color: black;
+    &::before {
+    opacity: 1;
+    }
+  }
+  &:active {
+    color: $navy;
+  }
+  &--radio::before {
+    top: -1px;
+    left: -35px;
+
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/radio-off.svg");
+  }
+  &--checkbox::before {
+    top: 0;
+    left: -35px;
+
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+  }
+}
+
+.filter__radio:checked ~ .filter__legend--radio::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter__checkbox:checked ~ .filter__legend--checkbox::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter__radio:checked ~ .filter__legend--radio:active::before {
+  background-image: url("../img/radio-off.svg");
+}
+
+.filter__radio:not(:checked) ~ .filter__legend--radio:active::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter__checkbox:checked ~ .filter__legend--checkbox:active::before {
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.filter__checkbox:not(:checked) ~ .filter__legend--checkbox:active::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter__radio:disabled ~ .filter__legend--radio {
+  color: rgba(0, 0, 0, 0.3);
+  &::before {
+    opacity: 0.1;
+  }
+}
+
+.filter__checkbox:disabled ~ .filter__legend--checkbox {
+  color: rgba(0, 0, 0, 0.3);
+  &::before {
+    opacity: 0.1;
+  }
 }
 
 .filter__button {

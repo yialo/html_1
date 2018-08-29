@@ -43,6 +43,7 @@
   @include list-box;
 
   @include font(400, 16px, 24px);
+  color: $navy;
 }
 
 .reference__item {
