@@ -1,0 +1,22 @@
+/* product BEM-block */
+
+.product {
+  @include outliner;
+
+  position: relative;
+
+  background-image: url("");
+}
+
+.product__header {
+  display: block;
+}
+
+.product__image {
+  display: block;
+}
+
+.product__data {
+  position: absolute;
+  bottom: 0;
+}

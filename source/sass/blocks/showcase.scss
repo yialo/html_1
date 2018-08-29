@@ -1,17 +1,15 @@
 /* showcase BEM-block */
 
-.showcase {
-  @include outliner;
-}
-
 .showcase__list {
   display: flex;
   flex-wrap: wrap;
   @include list-box;
   margin-left: -40px;
+  margin-bottom: -33px;
 }
 
 .showcase__item {
   width: 360px;
   margin-left: 40px;
+  margin-bottom: 33px;
 }
