@@ -1,22 +1,88 @@
 /* product BEM-block */
 
 .product {
-  @include outliner;
-
   position: relative;
 
   background-image: url("");
+  &:hover {
+    .product__header-path {
+      fill: #e9e9e9;
+    }
+    .product__data {
+      display: block;
+    }
+  }
 }
 
 .product__header {
   display: block;
+
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .product__image {
   display: block;
+  outline: 1px solid #e5e5e5;
+  outline-offset: -1px;
 }
 
 .product__data {
   position: absolute;
   bottom: 0;
+
+  display: none;
+  width: 100%;
+  @include padding-vert(26px, 43px);
+
+  text-align: center;
+
+  background-color: $gray;
+}
+
+.product__text {
+  max-height: 426px;
+  @include margin-vert(31px);
+  overflow-y: hidden;
+}
+
+.product__title {
+  @include margin-vert(15px);
+
+  @include font(700, 18px, 30px);
+  text-transform: uppercase;
+  color: black;
+}
+
+.product__description {
+  @include margin-vert;
+  @include font(400, 16px, 18px);
+  color: #666666;
+
+  &--sedona {
+    @include padding-hor(80px);
+  }
+  &--pink {
+    @include padding-hor(60px);
+  }
+  &--barbershop {
+    @include padding-hor(90px);
+  }
+  &--mishka {
+    @include padding-hor(80px);
+  }
+  &--aplus {
+    @include padding-hor(60px);
+  }
+  &--kvast {
+    @include padding-hor(60px);
+  }
+}
+
+.product__purchase {
+  width: 200px;
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
