@@ -56,7 +56,6 @@
     color: rgba(0, 0, 0, 1);
   }
   &--direction {
-    display: flex;
     width: 11px;
     height: 10px;
     margin-top: 6px;
@@ -87,4 +86,8 @@
       fill: #231f20;
     }
   }
+}
+
+.sorting__icon {
+  display: block;
 }
