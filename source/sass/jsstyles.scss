@@ -2,4 +2,13 @@
 
 .show {
   display: block;
+
+  animation-name: bounce;
+  animation-duration: 0.5s;
+}
+
+.error {
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
 }
