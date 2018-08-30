@@ -30,6 +30,9 @@
   }
   &--current {
     background-image: linear-gradient(to top, $red 0, $red 2px, transparent 2px);
+    .navigation__link {
+      @include states-color(black, black);
+    }
   }
 }
 
@@ -53,10 +56,5 @@
       background-repeat: no-repeat;
     }
   }
-  &:hover {
-    color: $red;
-  }
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
+  @include states-color($red, rgba(0, 0, 0, 0.3));
 }

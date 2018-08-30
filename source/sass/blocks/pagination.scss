@@ -1,11 +1,24 @@
 /* pagination BEM-block */
 
-.pagination {
-  @include outliner;
-}
-
 .pagination__list {
   display: flex;
   flex-wrap: wrap;
   @include list-box;
+}
+
+.pagination__item {
+  margin-right: 11px;
+}
+
+.pagination__item--disabled {
+  display: none;
+}
+
+.pagination__link {
+  &--number {
+    width: 50px;
+  }
+  &--direction {
+    width: 260px;
+  }
 }

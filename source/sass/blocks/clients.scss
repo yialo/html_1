@@ -1,6 +1,7 @@
 /* clients BEM-block */
 
 .clients__list {
+  opacity: 1;
   display: flex;
   flex-wrap: wrap;
   @include list-box;
@@ -32,6 +33,16 @@
 
 .clients__link {
   display: block;
+  @include transition-opacity(0.1s);
+  &:link {
+    opacity: 0.2;
+  }
+  &:hover {
+    opacity: 1;
+  }
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .clients__logo {

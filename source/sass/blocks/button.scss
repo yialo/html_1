@@ -19,7 +19,7 @@
 
   @include transition-color;
 
-  &--dark-text {
+  &--gray {
     color: black;
     background-color: $gray;
     @include states-bgcolor(#dfdfdf, #d5d5d5);
@@ -40,6 +40,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  &--current {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 3px #dbdbdb;
+    @include states-bgcolor(transparent, transparent);
+    @include states-color(black, black);
+    &:active {
+      box-shadow: inset 0 0 0 3px #dbdbdb;
+    }
   }
 }
 
