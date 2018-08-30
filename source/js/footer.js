@@ -4,7 +4,6 @@ var fullnameField = document.querySelector('.feedback__field--fullname');
 var emailField = document.querySelector('.feedback__field--email');
 var messageField = document.querySelector('.feedback__field--textarea');
 var modalClose = document.querySelector('.feedback__close');
-var map;
 
 feedbackLink.addEventListener('click', function(evt) {
   evt.preventDefault();
@@ -44,8 +43,10 @@ modalForm.addEventListener('submit', function(evt) {
 });
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 59.9387192, lng: 30.3208587},
-    zoom: 17
+  var target = {lat: 59.938760, lng: 30.323036};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: target
   });
+  var marker = new google.maps.Marker({position: target, map: map});
 }

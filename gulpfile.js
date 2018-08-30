@@ -18,6 +18,17 @@ var sass = require('gulp-sass');
 
 // Task functions
 
+var style = function () {
+  return gulp.src('source/sass/style.scss')
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest('source/css/'))
+    .pipe(browserSync.stream());
+}
+
 var serve = function () {
   browserSync.init({
     server: 'source/',
@@ -27,19 +38,8 @@ var serve = function () {
     ui: false
   });
   gulp.watch('source/sass/**/*.scss', style);
-  gulp.watch('source/js/**/*.js');
+  gulp.watch('source/js/**/*.js').on('change', browserSync.reload);
   gulp.watch('source/*.html').on('change', browserSync.reload);
-}
-
-var style = function() {
-  return gulp.src('source/sass/style.scss')
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('source/css/'))
-    .pipe(browserSync.stream());
 }
 
 // Gulp tasks
