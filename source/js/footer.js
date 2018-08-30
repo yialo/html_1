@@ -4,6 +4,7 @@ var fullnameField = document.querySelector('.feedback__field--fullname');
 var emailField = document.querySelector('.feedback__field--email');
 var messageField = document.querySelector('.feedback__field--textarea');
 var modalClose = document.querySelector('.feedback__close');
+var map;
 
 feedbackLink.addEventListener('click', function(evt) {
   evt.preventDefault();
@@ -41,3 +42,10 @@ modalForm.addEventListener('submit', function(evt) {
     modalForm.classList.add('error');
   }
 });
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 59.9387192, lng: 30.3208587},
+    zoom: 17
+  });
+}
