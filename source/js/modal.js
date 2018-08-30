@@ -9,6 +9,13 @@ feedbackLink.addEventListener('click', function(evt) {
   fullnameField.focus();
 });
 
+feedbackLink.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === 13) {
+    evt.preventDefault();
+    modalForm.classList.add('show');
+  }
+});
+
 modalClose.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalForm.classList.remove('show');
