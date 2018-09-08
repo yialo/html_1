@@ -69,10 +69,3 @@
   transition-property: opacity;
   transition-duration: $op;
 }
-
-/* TEMPORARY */
-
-@mixin outliner {
-  outline: 1px solid green;
-  outline-offset: -1px;
-}
